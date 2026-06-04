@@ -4,16 +4,16 @@
 // Servo
 // --------------------
 Servo rouletteServo;
-const int servoPin = 8;
+const int servoPin = 7;
 
 int currentAngle = 90;
 
 // --------------------
 // 74HC595 display pins
 // --------------------
-int data = 5;
-int latch = 6;
-int clock = 7;
+int data = 8;
+int latch = 9;
+int clock = 10;
 
 int digitPins[4] = {2, 3, 4, A5};
 
@@ -37,8 +37,8 @@ unsigned char table[] = {
 // --------------------
 // Buttons
 // --------------------
-const int leftButton = A1;    // down / red
-const int selectButton = A0;  // select
+const int leftButton = A0;    // down / red
+const int selectButton = A1;  // select
 const int rightButton = A2;   // up / black
 
 bool lastLeftState = HIGH;
